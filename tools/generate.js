@@ -4,15 +4,14 @@ const { generateTemplateFiles } = require('generate-template-files')
 
 
 const execSync = require('child_process').execSync;
-const output = execSync('npm root -g', { encoding: 'utf-8' });
-
+const output = execSync('npm root -g');
 generateTemplateFiles([
   // Example of generating a single file
   {
     option: 'Nuxt',
     defaultCase: '(pascalCase)',
     entry: {
-      folderPath: output+'\tools\frameworks\nuxt',
+      folderPath: `${output}\\sawala-boilerplate\\tools\\frameworks\\nuxt`.replace(/(\r\n|\n|\r)/gm, ""),
     },
     stringReplacers: [
         { question: 'Nama Project', slot: '__projectName__' },
