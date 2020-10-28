@@ -1,0 +1,15 @@
+{
+  "name": "sawala-boilerplate",
+  "version": "0.1.0",
+  "description": "Sawala boilerplate",
+  "scripts": {
+    "generate": "node ./tools/generate.js"
+  },
+  "dependencies": {
+    "generate-template-files": "^3.0.0"
+  },
+  "bin": {
+    "sawala-boilerplate": "./tools/generate.js"
+  },
+  "preferGlobal": true
+}

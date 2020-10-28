@@ -1,0 +1,8 @@
+@import "./_variables.scss";
+
+* {
+    font-family: $inimahFont;
+}
+.space-between {
+    justify-content: space-between;
+}
