@@ -1,11 +1,11 @@
 export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: "__projectName__(noCase)",
+    title: '__projectName__(kebabCase)',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: "__projectDesc__(noCase)" },
+      { hid: 'description', name: 'description', content: '__projectDesc__(noCase)' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
@@ -31,8 +31,6 @@ export default {
     'bootstrap-vue/nuxt',
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    // https://go.nuxtjs.dev/pwa
-    '@nuxtjs/pwa',
   ],
   bootstrapVue: {
     icons: true, // Install the IconsPlugin (in addition to BootStrapVue plugin
